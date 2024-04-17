@@ -1,0 +1,607 @@
+@charset "UTF-8";
+
+
+body{
+    max-width: 100%;
+    max-height: 5000px;
+    font-family: Unbounded;
+    margin: 0;
+}
+
+.section{
+    max-width:85rem;
+    height: 100%;
+    box-sizing: border-box;
+    margin: auto;
+   
+}
+
+/** section1 **/
+
+.header {
+    width: 100%;
+    height: 4.5rem;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto ;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.header__logo{
+    Height: 1.5rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    cursor: pointer;
+
+   
+}
+
+.header__main{
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+.header__main > a{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    cursor: pointer;
+    margin: 0.75rem;
+    text-decoration: none;
+    color: #666666;
+}
+
+.header__main > a:hover{
+    text-decoration: underline;
+    text-decoration-color: green;
+}
+
+.header__btn{
+    width: 11.875rem;
+    height: 2.25rem;
+    border-radius: 1.25rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: Unbounded;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #3360FF;
+    border: 0;
+   
+}
+
+/** section2 **/
+
+.saidbar{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 6rem 0;
+}
+
+.saidbar__servis{
+    width: 41.25rem;
+    height: 33.75rem; ;
+    display:inline-grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+.saidbar__servis > h1{
+    width: 36.75rem;
+    height: 6.25rem;
+    font-weight: Unbounded;
+    grid-column: 1/3;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.3125rem;
+    margin: 0;
+    color: #3375FF;
+}
+
+.saidbar__servis_text{
+    width: 17.5rem;
+    grid-row: 2/4;
+    align-content: start;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #676D83;
+    margin: 0;
+   
+}
+
+.saidbar__servis--img{
+    align-content: start;
+}
+
+.saidbar__servis--img > img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.saidbar__servis_get{
+    grid-row: 4/5;
+    align-content: end;
+   
+    
+}
+.contact__get,
+.hero__a,
+.saidbar__servis_get > a{
+    text-align: center;
+    padding: 0.875rem 4.25rem;
+    border-radius: 3.875rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height:3rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color:#3375FF;
+
+}
+
+.saidbar__img{
+    width: 42.125rem;
+    height: 33.75rem;
+    border-radius:1rem;
+   
+}
+
+/** section3 **/
+
+.icon{
+    width: 1296px;
+    height: 296px;
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 0 auto;
+}
+
+.icon__h3{
+    height: 76px;
+    border-bottom: 1px solid #676D83;
+
+}
+
+.icon__h3 >h3{
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    margin: 0;
+    color:  #020C31;
+     
+}
+
+.icon__cart{
+    display: grid;
+    grid-template-columns:  auto auto auto;
+    height: 220px;
+    align-content: end;
+    cursor: pointer;
+}
+
+.icon__cart_img{
+    width: 67px;
+    height: 56px;
+}
+
+.icon__cart_h4{
+    font-family: Unbounded;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin:10px 0 ;
+
+}
+
+.icon__cart_p{
+    width: 310px;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #676D83;
+    margin: 0;
+
+
+}
+
+/** section4 **/
+
+.hero{
+    display: grid;
+    justify-content: end;
+    height: 600px;
+    margin: 100px 0;
+    border-radius: 16px;
+    background-image: url(./disinfection-sanitization-spraying-900x450.jpg);
+}
+
+.hero > div{
+    width: 680px;
+}
+
+.hero__h3{
+    font-family: Unbounded;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #FAFAFA;
+}
+
+.hero__text{
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 120px;
+}
+
+
+/** section5 **/
+
+.servis{
+    height: 650px;
+    display: grid;
+    grid-template-rows: auto auto;
+
+}
+
+.servis__text{
+    height: 150px;
+    margin-left: 48px;
+}
+
+.servis__text > h2{
+    font-family: Unbounded;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    margin: 0;
+}
+
+.servis__text >p{
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.servis__cart{
+    display: grid;
+    grid-template-columns:  auto auto auto;
+    height: 500px;
+    align-content: end;
+    cursor: pointer;
+}
+
+.servis__cart1,
+.servis__cart2,
+.servis__cart3{
+    width: 442px;
+    height: 500px;
+    border-radius: 12px;
+    column-gap: 17px;
+    color: #b2c8c8;
+    border: 1px solid #e0e6e6;
+
+}
+
+.servis__cart1:hover,
+.servis__cart2:hover,
+.servis__cart3:hover{
+    outline: 3px solid #03ADE3;
+
+}
+
+.servis__cart1 > h3{
+    font-family: Unbounded;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #020C31;
+    margin-bottom: 16px;
+}
+
+.servis__cart2 >h3,
+.servis__cart3 >h3{
+    font-family: Unbounded;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #020C31;
+
+}
+
+.servis__cart1 > p{
+    font-family: Unbounded;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #056AC7;
+}
+
+.servis__cart2 > p{
+    font-family: Unbounded;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #03ADE3;
+
+}
+
+.servis__cart3 > p{
+    font-family: Unbounded;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #009AA3;
+
+}
+
+.servis__cart1 > img{
+    position: relative;
+    top: 190px;
+    left: 300px; 
+}
+.servis__cart2 > img,
+.servis__cart3 > img{
+   position: relative;
+   top: 200px;
+   left: 300px;
+}
+
+/** section6 **/
+
+.contact{
+    width: 1360px;
+    height: 574px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 120px 0;
+    border-radius: 16px;
+    background-image: url(./Rectangle\ 5.jpg);
+}
+
+.contact__img > img{
+    width: 528px;
+    height: 510px;
+    border-radius: 12px;
+    margin: 32PX  32px 66px;
+
+}
+
+.contact__icon{
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+    
+}
+
+
+.contact__h4{
+    font-family: Unbounded;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    grid-column: start;
+    color: #FAFAFA;
+
+}
+
+/** section7 **/
+
+.faq{
+    width: 1296px;
+    height: 340px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    border-top: 1px solid #CCCCCC;
+    margin: 0 auto;
+}
+
+.faq__h2{
+    grid-row: 1/4;
+    font-family: Unbounded;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 10px;
+}
+
+.faq__content{
+    grid-column: 2/5;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.faq__content >h4{
+    font-family: Unbounded;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 10px 0;
+
+}
+
+.faq__content >p{
+    font-family: SF Pro Display;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+    opacity: 0;
+}
+
+.faq__content p:hover{
+    opacity:1 ;
+}
+
+/** section8 **/
+
+.text__content{
+    width: 1360px;
+    height: 448px;
+    position: relative;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    border-radius: 12px;
+    margin: 80px 0 30px 0;
+    background-image: url(./Rectangle\ 111001851.jpg);
+}
+
+.text__content_login{
+    width: 456px;
+    height: 384px;
+    justify-content: center;
+    display: grid;
+    margin: 32px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+.text__content_login h2{
+    font-family: Unbounded;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #242825;
+    margin: 24px 0;
+}
+
+.text__content_login .input-box{
+    width: 408px;
+    height: 48px;
+    border-radius: 12px;
+    background: #F2F2F2;
+    margin: 20px 0;
+
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 10px;
+    background: #F2F2F2;
+    padding-left: 10px;
+    border: 0;
+}
+
+.checkbox input{
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+}
+
+.text__content_login .btn{
+    width: 408px;
+    height: 48px;
+    font-family: Unbounded;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color:#242825;
+    margin: 20px 0;
+    padding: 0;
+    border: 0;
+}
+
+.text__content_img svg{
+    width: 461px;
+    height: 430px;
+}
+
+.text__content_img-h3{
+    position:absolute;
+    font-family: Unbounded;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    top: 50px;
+    left: 800px;
+    color: #FAFAFA;
+   
+}
+
+/** section9 **/
+
+.footer{
+    width: 100%;
+    height: 220px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+}
+
+.footer__logo{
+    padding-left: 30px;
+}
+
+.footer__media{
+    grid-column: 2/5;
+   
+}
+
+.footer__media_locatsia,
+.footer__media_tell{
+    height: 40px;
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 16px;
+    
+}
+
+.footer__media_locatsia > a,
+.footer__media_tell a{
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #242825;
+    text-decoration: none;
+}
+
+.footer__media_social{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    border-top: 1px solid #CCCCCC;
+    margin-top: 10px;
+}
+
+.footer__media_social a{
+    font-family: Unbounded;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #242825;
+    background-color: #F2F2F2;
+    padding: 12px 130px;
+    margin-top: 20px;
+}
+
+
+
+
