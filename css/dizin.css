@@ -215,12 +215,12 @@ body{
 /** section4 **/
 
 .hero{
+    width: 100%;
     display: grid;
     justify-content: end;
     height: 600px;
     margin: 100px 0;
     border-radius: 16px;
-    background-image: url(./disinfection-sanitization-spraying-900x450.jpg);
 }
 
 .hero > div{
@@ -367,7 +367,7 @@ body{
     grid-template-columns: auto auto;
     margin: 120px 0;
     border-radius: 16px;
-    background-image: url(./Rectangle\ 5.jpg);
+   
 }
 
 .contact__img > img{
